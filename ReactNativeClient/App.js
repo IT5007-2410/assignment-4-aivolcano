@@ -35,9 +35,19 @@ export default class App extends React.Component
   {
     return(
     <>
-      <Text>Issue Tracker</Text>
-      <IssueList/>
+      <Text style={styles.title}>Issue Tracker</Text>
+      <IssueList/> 
     </>);
 
   }
 }
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 20,
+    marginBottom: 10,
+  },
+});
