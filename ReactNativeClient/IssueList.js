@@ -499,7 +499,7 @@ export default class IssueList extends React.Component {
   }
 
   async addToBlacklist(nameInput) {
-    const query = `mutation addToBlacklist($nameInput: String!) {
+    const query = `mutation myaddToBlacklist($nameInput: String!) {
         addToBlacklist(nameInput: $nameInput)
     }`;
 
