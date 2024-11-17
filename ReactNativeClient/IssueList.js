@@ -289,7 +289,6 @@ const stylesTable = StyleSheet.create({
               <TextInput
                 style={stylesAdd.input}
                 value={title}
-                // onChangeText={title => this.setState({ title })}
                 onChangeText={(value) => this.handleInputChange('title', value)}
               />
 
@@ -297,7 +296,6 @@ const stylesTable = StyleSheet.create({
               <TextInput
                 style={stylesAdd.input}
                 value={owner}
-                // onChangeText={owner => this.setState({ owner })}
                 onChangeText={(value) => this.handleInputChange('owner', value)}
               />
 
@@ -313,7 +311,6 @@ const stylesTable = StyleSheet.create({
                     <Text style={styles.dropdownListItemText}>{option}</Text>
                   </View>
                 )}
-                // onSelect={(idx, status) => { this.setState({ status });  }}
                 onSelect={(idx, selectedStatus) => this.handleInputChange('status', selectedStatus)}
               ><Text style={stylesAdd.dropdownText}>{this.state.status}</Text>
               </ModalDropdown>
@@ -322,7 +319,6 @@ const stylesTable = StyleSheet.create({
               <TextInput
                 style={stylesAdd.input}
                 value={effort}
-                // onChangeText={effort => this.setState({ effort })}
                 onChangeText={(value) => this.handleInputChange('effort', value)}
               />
 
